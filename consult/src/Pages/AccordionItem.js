@@ -25,9 +25,10 @@ class AccordionItem extends React.Component {
             return (
                 <li onClick={this.handleClick}>
                     <div  className="question-block">
-                        {this.props.data.title.map((item, index) =>{
+                        {this.props.data.map((item, index) =>{
+                            console.log(this.props.data);
                             return (
-                                <p className="question" key={index}>{item}</p>
+                                <p className="question" key={index}>{item.title}</p>
                             )
                         })
                         }
