@@ -35,10 +35,6 @@ const DropData  = [
 ];
 
 class Faq extends  React.Component {
-    constructor(props) {
-        super(props);
-
-    }
 
     render() {
             return (
@@ -46,13 +42,13 @@ class Faq extends  React.Component {
                     <div className="wrapper">
                         <h2>frequently asked questions</h2>
                         <ul className="question-list">
-                            <AccordionItem data={ DropData } />
-                            <AccordionItem data={ DropData } />
-                            <AccordionItem data={ DropData } />
-                            <AccordionItem data={ DropData } />
-                            <AccordionItem data={ DropData } />
-                            <AccordionItem data={ DropData } />
-                            <AccordionItem data={ DropData } />
+                            {
+                                DropData.map((item, index) => {
+                                    return (
+                                        <AccordionItem data={item} key={index}/>
+                                )
+                            })
+                            }
                         </ul>
                     </div>
                 </section>

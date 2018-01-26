@@ -36,14 +36,12 @@ const Footer = () => {
                         <p className="email-info">Enter your email address to subscribe our notification of our new post & features
                             by
                             email.</p>
-                        <p>
                             <form action="index.html">
                                 <div className="flex-wrapper">
-                                    <input type="email" placeholder="EMAIL ADDRESS" maxlength="27"/>
+                                    <input type="email" placeholder="EMAIL ADDRESS"/>
                                     <button className="btn-subscribe" type="button">Subsribe</button>
                                 </div>
                             </form>
-                        </p>
                     </div>
                 </div>
                 <div className="footer-bottom">

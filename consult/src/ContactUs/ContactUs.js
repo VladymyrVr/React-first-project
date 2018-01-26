@@ -6,10 +6,6 @@ import ConnectUs from './ConnectUs'
 import WriteUs from "./WriteUs";
 
 class ContactUs extends React.Component {
-    constructor(props){
-        super(props);
-
-    }
 
     render () {
         return (

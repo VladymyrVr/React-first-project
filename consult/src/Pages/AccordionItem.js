@@ -16,7 +16,6 @@ class AccordionItem extends React.Component {
 
 
         render() {
-            console.log(this.state.DropOff);
             let DropContent;
             if (this.state.DropOff) {
                 DropContent = (<p className="hidden">{this.props.data.content}</p>)
@@ -25,18 +24,13 @@ class AccordionItem extends React.Component {
             return (
                 <li onClick={this.handleClick}>
                     <div  className="question-block">
-                        {this.props.data.map((item, index) =>{
-                            console.log(this.props.data);
-                            return (
-                                <p className="question" key={index}>{item.title}</p>
-                            )
-                        })
-                        }
+                        <p className={this.state.DropOff ? 'question open' : 'question '}>{this.props.data.title}</p
+                        >
                         {DropContent}
                     </div>
                 </li>
             )
-        }
+        };
 }
 
 
