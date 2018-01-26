@@ -2112,7 +2112,7 @@ footer .footer-bottom .social-networks-list a {
 }
 /* line 56, ../scss/layout/section/_faq.scss */
 .faq .hidden {
-  display: none;
+
   font-family: 'Domine', sans-serif;
   color: #838b8c;
   font-size: 15px;

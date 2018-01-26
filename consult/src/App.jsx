@@ -1,24 +1,20 @@
 import  React from "react";
-import Mainwelcome from "./Mainwelcome";
+
+
+//components
+
+import Main from './Main'
 import Footer from "./Footer";
-import ShortAboutUs from "./Short-about-us";
-import Features from "./Features";
-import Projects from "./Projects";
-import Services from "./Services";
-import Testimonials from "./Testimonials";
-import Quickcontact from "./Quickcontact";
+
+
 
 class App extends React.Component {
+
+
     render() {
         return (
             <div>
-                <Mainwelcome/>
-                <ShortAboutUs/>
-                <Features/>
-                <Projects/>
-                <Services/>
-                <Testimonials/>
-                <Quickcontact/>
+                <Main/>
                 <Footer/>
             </div>
         )
