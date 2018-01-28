@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 //components
 import Header from './Header'
@@ -26,12 +26,12 @@ class Welcome extends React.Component {
                 </div>
                 <nav className="nav-hide main-nav">
                     <ul className="nav-list">
-                        <li><Link to='/'>Home</Link></li>
-                        <li><Link to="/about">About Us</Link></li>
-                        <li><Link to="/industary">Industry</Link></li>
-                        <li><Link to="/careers">Careers</Link></li>
-                        <li><Link to="/pages">Pages</Link></li>
-                        <li><Link to="/contactus">Contact Us</Link></li>
+                        <li><NavLink to='/' activeClassName="active">Home</NavLink></li>
+                        <li><NavLink to="/about" activeClassName="active">About Us</NavLink></li>
+                        <li><NavLink to="/industary" activeClassName="active">Industry</NavLink></li>
+                        <li><NavLink to="/careers" activeClassName="active">Careers</NavLink></li>
+                        <li><NavLink to="/pages" activeClassName="active">Pages</NavLink></li>
+                        <li><NavLink to="/contactus" activeClassName="active">Contact Us</NavLink></li>
                     </ul>
                 </nav>
                 <div className="wrapper">
